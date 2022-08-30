@@ -12,153 +12,20 @@
 
     <title>Sign-Up-form</title>
 
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;900&display=swap');
-
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;900&family=Tapestry&display=swap');
-
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;900&family=Skranji&family=Tapestry&display=swap');
-
-        @font-face {
-            font-family: 'Norse-Bold';
-            src: url('Norse-Bold.otf');
-        }
-
-        body {
-            /* font-family: 'Roboto', sans-serif; */
-            margin-right: 5%;
-            margin-left: 5%;
-            background-color: black;
-        }
-
-        #signup_container {
-            display: flex;
-            height: 100vh;
-            background-color: white;
-        }
-
-        #sidebar {
-            min-width: 35%;
-            /* background-color: blueviolet; */
-            background-image: url("ferns_pic.jpeg");
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-        }
-
-        #logo {
-            display: flex;
-            justify-content: center;
-            /* font-family: Skranji; */
-            font-family: 'Norse-Bold';
-            font-size: 7rem;
-            margin-top: 20%;
-            text-align: center;
-            align-items: center;
-            height: 15%;
-            background-color: rgba(0, 0, 0, 0.5);
-        }
-
-        #logo>div {}
-
-        #signup_form {
-            margin-left: 3%;
-            width: 100%;
-        }
-
-        #message_text {
-            width: 90%;
-        }
-
-        div>p {
-            font-size: 1.5rem;
-            font-weight: bold;
-            text-overflow: wrap;
-            width: 70%;
-
-        }
-
-        .input_fields {
-            margin-right: 5%;
-            margin-bottom: 2%;
-        }
-
-        input {
-            padding-right: 3%;
-            border: 1px solid rgb(209, 205, 205);
-            border-radius: 0.25rem;
-            max-width: 252px;
-        }
-
-        input:focus {
-            border: 1px solid blue;
-            outline: 0;
-            border-radius: 0.25rem;
-            transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-            box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.19);
-        }
-
-        .password_error {
-            border-color: red;
-        }
-
-        .error {
-            color: red;
-            font-size: 0.8rem;
-        }
-
-        .password_match {
-            border-color: greenyellow;
-        }
-
-        label {
-            text-transform: uppercase;
-            font-size: 0.8rem;
-            font-weight: 500;
-        }
-
-        hr {
-            height: 2px;
-            width: 105%;
-            height: 50px;
-            margin-top: 0;
-            margin-left: -5%;
-            margin-right: -20%;
-            border-bottom: 1px solid #1f1209;
-            box-shadow: 0 20px 20px -20px #333;
-            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-            /* margin: -50px auto 10px; */
-        }
-
-        .button {
-            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-            background-color: #596D48;
-            border-color: #596D48;
-            font-weight: 600;
-            font-size: 0.8rem;
-            min-width: 180px;
-        }
-
-        #create_account {
-            margin-top: 3%;
-            margin-bottom: 3%;
-
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <div id="signup_container">
         <div id="sidebar" alt="Wheres the pic?">
-            <!-- <h3>Sign Up Form</h3> -->
             <div id="logo">
-                <!-- <div> -->
-                <img src="odin-lined.png" alt="odin_pic"
-                    style="max-height:90%; align-items:center; text-align: center; opacity: 1;">
-                <!-- <h1>ODIN</h1> -->
+
+                    <img src="img/odin-lined.png" alt="odin_pic" style="max-height:90%; align-items:center; text-align: center; opacity: 1;">
+
+                <a href="https://github.com/ATBLV/Sign-up-form" style="max-height: 90px;">
+                    </a>
                 <div style="display: flex; height: 100%;  opacity: 1.0; color: white; align-items: center;">
                     ODIN</div>
-                <!-- </div> -->
             </div>
         </div>
         <div id="signup_form">
@@ -252,7 +119,7 @@
         </div>
     </div>
     </div>
-    <script src="sign_up_form.js"></script>
+    <script src="js/sign_up_form.js"></script>
 </body>
 
 </html>
